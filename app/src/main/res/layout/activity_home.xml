@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawerLayoutHome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarHome"
+                app:title="Trang chủ"
+                android:background="#7FCBED"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize">
+            </androidx.appcompat.widget.Toolbar>
+            <ViewFlipper
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/viewFlipperHome">
+            </ViewFlipper>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#969698">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Sản phẩm mới nhất"
+                    android:textColor="#D53428"
+                    android:textStyle="bold"
+                    android:textSize="20sp">
+                </TextView>
+
+                <GridView
+                    android:id="@+id/gridViewHome"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#EAF3F4"
+                    android:numColumns="2"
+                    android:padding="4dp"></GridView>
+
+            </LinearLayout>
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".MainActivity">
+                <com.google.android.material.bottomnavigation.BottomNavigationView
+                    android:id="@+id/navigation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="?android:attr/windowBackground"
+                    android:foreground="?attr/selectableItemBackground"
+                    app:menu="@menu/master_bottom_navigation"
+                    app:elevation="10dp"
+                    app:labelVisibilityMode="labeled"
+                    />
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+        </LinearLayout>
+
+        <com.google.android.material.navigation.NavigationView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/navigationViewHome"
+            android:layout_gravity="start">
+            <ListView
+                android:id="@+id/listViewHome"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </ListView>
+        </com.google.android.material.navigation.NavigationView>
+
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+</LinearLayout>

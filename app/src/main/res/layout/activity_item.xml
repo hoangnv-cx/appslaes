@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarHome"
+            app:title="Trang chủ"
+            android:background="#7FCBED"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+        </androidx.appcompat.widget.Toolbar>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+
+        </ImageView>
+        <TextView
+            android:textSize="22sp"
+            android:text="san phma moi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <view
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txtGiaoHangTrongNuoc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="giao hang trong nước"
+                android:textSize="15sp"/>
+            <TextView
+                android:layout_below="@+id/txtGiaoHangTrongNuoc"
+                android:id="@+id/txtGiaoHangNuocNgoai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="giao hang nước ngoài"
+                android:textSize="15sp"/>
+
+        </RelativeLayout>
+        <view
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+        <
+    </LinearLayout>
+
+</ScrollView>

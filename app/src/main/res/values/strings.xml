@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">app bán hàng</string>
+    <string name="user_name">User Name</string>
+    <string name="password">Password</string>
+    <string name="full_name">Full Name</string>
+
+</resources>
